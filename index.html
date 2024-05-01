@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        table {
+            border-collapse: separate;
+            border-spacing: 0 20px; 
+        }
+    </style>
+</head>
+<body>
+
+
+<form action="thankyou.html"  >
+  <fieldset>
+    <legend>Name and Address</legend>
+    
+    <table>
+        
+        <tr>
+          <td> 
+            <label>Do you use CiviCRM?</label>
+          </td> 
+          <td> 
+            <input type="radio" id="yes" name="choice" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="choice" value="no">
+            <label for="no">No</label>
+            <a href="#" onclick="unselectRadio()">(unselect)</a>
+          </td> 
+        </tr>
+
+        <tr>
+          <td> 
+            <label>How long have you been using </br> CiviCRM?</label>
+          </td> 
+          <td> 
+            <select id="durationcivicrm" name="durationcivicrm">
+              <option value="select" selected >&nbsp&nbsp- select -</option>
+              <option value="1 year">1 year compensation</option>
+              <option value="2 years">2 years</option>
+              <option value="3 Years">3 years</option>
+            </select>
+          </td> 
+        </tr>
+
+        <tr>
+          <td> 
+            <label>Which CRM do you use?</label>
+          </td> 
+          <td> 
+            <select id="typecivicrm" name="typecivicrm">
+              <option value="select" selected>&nbsp&nbsp- select -</option>
+              <option value="crm ai">CRM AI</option>
+              <option value="operational CRM">Operational</option>
+              <option value="service">Service</option>
+            </select>
+          </td> 
+        </tr>
+
+        <tr>
+          <td> 
+            <label>Your skill set</label>
+          </td> 
+          <td> 
+            <select id="skillset" name="skillset">
+              <option value="select" selected>&nbsp&nbsp- select -</option>
+              <option value="leadership">Leadership problem solving</option>
+              <option value="problem solving">Problem Solving</option>
+              <option value="collaboration">Collaboration</option>
+            </select>
+          </td> 
+        </tr>
+
+        
+        <tr>
+          <td> 
+            <label for="email">Email *</label>
+          </td> 
+          <td> 
+            <input style="border: ridge;" type="email" id="email" name="email" required>
+        </td> 
+        </tr>
+
+        <tr>
+          <td> 
+            <label for="fname">First Name *</label>
+          </td> 
+          <td> 
+            <input style="border: ridge;" type="text" id="fname" name="fname" required>
+        </td> 
+        </tr>
+
+        <tr>
+          <td> 
+            <label for="lname">Last Name *</label>
+          </td> 
+          <td> 
+            <input style="border: ridge;" type="text" id="lname" name="lname" required>
+          </td> 
+        </tr>
+
+        <tr>
+          <td> 
+          </td> 
+          <td>
+            <span>First and last name will be shared with other visitors to the site.</span> 
+          </td> 
+        </tr>
+
+        <tr>
+          <td> 
+            <label for="saddreess">Street Address (Home)</label>
+          </td> 
+          <td> 
+            <input style="border: ridge; width: 230px;" type="address" id="address" name="address">
+          </td> 
+        </tr>
+
+      
+
+        <tr>
+          <td> 
+            <label for="city">City (Home)</label>
+          </td> 
+          <td> 
+            <input style="border: ridge;" type="text" id="city" name="city">
+          </td> 
+        </tr>
+
+        <tr>
+          <td> 
+            <label for="Postalcode">Postal Code (Home)</label>
+          </td> 
+          <td> 
+            <input  style="border: ridge; width: 80px;" type="Number" id="postalcode" name="postalcode">
+          </td> 
+        </tr>
+
+        <tr>
+          <td> 
+            <label>Country (Home)</label>
+          </td> 
+          <td> 
+            <select id="country" name="country">
+              <option value="select" selected >United States</option>
+              <option value="pakistan">Pakistan</option>
+              <option value="china">China</option>
+              <option value="india">India</option>
+            </select>
+          </td> 
+        </tr>
+
+        <tr>
+          <td> 
+          </td> 
+          <td>
+            <span>Your state/province and country of residence will be shared with others so folks can find others in their community.</span> 
+          </td> 
+        </tr>
+
+        <tr>
+          <td> 
+            <label>State (Home)</label>
+          </td> 
+          <td> 
+            <select id="state" name="state">
+              <option value="select" selected >&nbsp&nbsp- select -</option>
+              <option value="punjab">Punjab and pakistan for example</option>
+              <option value="sindh">Sindh</option>
+              <option value="delhi">Delhi</option>
+            </select>
+          </td> 
+        </tr>
+
+
+          
+
+        
+      </table>
+
+  </fieldset>
+
+<input style="border-radius: 10px; margin-top: 5px;" type="submit" value="Save">&nbsp&nbsp&nbsp
+<input style="border-radius: 10px; margin-top: 5px" type="button" value="Cancel">
+</form>
+
+
+<script>
+  function unselectRadio() {
+    var radios = document.getElementsByName('choice');
+    for (var i = 0; i < radios.length; i++) {
+      radios[i].checked = false;
+    }
+  }
+</script>
+
+
+</body>
+</html>
+
